@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#Starts the sshd daemon via systemctl and sets the ufw rule to allow incoming connections
+
+systemctl stop sshd && ufw deny ssh
